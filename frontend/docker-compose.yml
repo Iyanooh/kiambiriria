@@ -1,0 +1,14 @@
+services:
+  web:
+    container_name: ggmc
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/app
+      - /app/node_modules    # Prevent overwriting node_modules with local host empty dir
+    command: npm run dev

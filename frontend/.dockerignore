@@ -1,0 +1,32 @@
+# Node modules (Docker will install inside container)
+node_modules
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Logs
+*.log
+
+# Git files
+.git
+.gitignore
+
+# Next.js build output (ignore if building inside Docker)
+# If you want to copy local build instead, remove this
+.next
+
+# Output folders
+out
+dist
+
+# Docker system files (do NOT ignore docker-compose.yml)
+# Dockerfile
+# docker-compose.yml  <-- Keep this in context!
+
+# Editor and OS files
+*.swp
+*.swo
+*.DS_Store
+
+# Markdown and documentation
+*.md
